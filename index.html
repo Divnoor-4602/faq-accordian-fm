@@ -1,0 +1,112 @@
+<!-- todo: add a background image -->
+<!-- todo: Add responsive design for greater than screens -->
+<!-- todo: position everything in the center if the size is being increased -->
+<!-- todo: Add opening animation for the text -->
+<!-- todo: polish the design -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Frontend Mentor | FAQ accordion</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+      bottom: 10px;
+      position: absolute;
+      margin-left: 3rem;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <picture>
+      <source srcset="./assets/images/background-pattern-mobile.svg" media="(max-width: 375px)">
+      <source srcset="./assets/images/background-pattern-desktop.svg" media="(min-width: 375px)">
+      <img src="./assets/images/background-pattern-mobile.svg" alt="background-mobile" class="image-mobile" />
+    </picture>
+
+  </div>
+
+
+
+  <div class="item-box">
+    <div class="accordion">
+      <div id="faq">
+        <svg id="star-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="41" fill="none" viewBox="0 0 40 41">
+          <path fill="#AD28EB"
+            d="M37.5 20.5a2.467 2.467 0 0 1-1.64 2.344l-9.913 3.604-3.603 9.911a2.5 2.5 0 0 1-4.688 0l-3.604-9.922-9.911-3.593a2.5 2.5 0 0 1 0-4.688l9.921-3.604 3.594-9.911a2.5 2.5 0 0 1 4.688 0l3.604 9.921 9.911 3.594A2.467 2.467 0 0 1 37.5 20.5Z" />
+        </svg>
+        <span class="faq-text">FAQs</span>
+      </div>
+      <div class="accordian-item">
+        <span class="accordian-item-text">What is Frontend mentor, how will it help me?</span>
+        <button class="show-more-symbol" id="help">+</button>
+        <div class="break"></div>
+        <span id="more-info-1" class="info-text"></span>
+        <div class="break"></div>
+        <hr>
+      </div>
+      <div class="accordian-item">
+        <span class="accordian-item-text">Is Frontend mentor free?</span>
+        <button class="show-more-symbol" id="free">+</button>
+        <div class="break"></div>
+        <span id="more-info-2" class="info-text"></span>
+        <div class="break"></div>
+        <hr>
+      </div>
+      <div class="accordian-item">
+        <span class="accordian-item-text">Can I use Frontend mentor projects in my
+          portfolio
+        </span>
+        <button class="show-more-symbol" id="projects">+</button>
+        <div class="break"></div>
+        <span id="more-info-3" class="info-text"></span>
+        <div class="break"></div>
+        <hr>
+      </div>
+      <div class="accordian-item">
+        <span class="accordian-item-text">How can I get help if I am stuck in a
+          challenge
+        </span>
+        <button class="show-more-symbol" id="challenge">+</button>
+        <div class="break"></div>
+        <span id="more-info-4" class="info-text"></span>
+        <div class="break"></div>
+        <hr>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Divnoor</a>.
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>

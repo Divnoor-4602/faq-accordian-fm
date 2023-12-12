@@ -1,0 +1,148 @@
+/* - White: hsl(0, 0%, 100%)
+- Light pink: hsl(275, 100%, 97%)
+- Grayish purple: hsl(292, 16%, 49%)
+- Dark purple: hsl(292, 42%, 14%) */
+
+body {
+    background-color: hsl(275, 100%, 97%);
+    display: flex;
+    justify-content: center;
+}
+
+.item-box {
+    position: relative;
+    top: 3.75rem;
+}
+
+
+
+.accordion {
+    border-radius: 1rem;
+    display: flex;
+    margin-top: 7rem;
+    margin-left: 1rem;
+    background-color: hsl(0, 0%, 100%);
+    flex-direction: column;
+    height: 31.25rem;
+    width: 20rem;
+    font-family: "Work Sans";
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    color: hsl(292, 42%, 14%);
+
+}
+
+#faq {
+    display: flex;
+    gap: 1.25rem;
+    padding-top: 1.25rem;
+    padding-left: 1rem;
+    padding-bottom: 1.25rem;
+}
+
+#star-icon {
+    align-self: center;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.faq-text {
+    font-size: 1.875rem;
+    font-variation-settings: "wght" 700;
+}
+
+.accordian-item {
+    display: inline-flex;
+    justify-content: space-around;
+    font-variation-settings: "wght" 600;
+    flex-wrap: wrap;
+    padding-left: 1rem;
+    padding-bottom: 0.5rem;
+
+}
+
+.accordian-item-text:hover {
+    color: rgb(255, 0, 255);
+    cursor: pointer;
+}
+
+.accordian-item-text {
+    width: 14.375rem;
+}
+
+.show-more-symbol {
+    background-color: blueviolet;
+    color: hsl(0, 0%, 100%);
+    border-radius: 50%;
+    height: 1.875rem;
+    width: 1.875rem;
+    border: none;
+    cursor: grab;
+}
+
+.info-text {
+    color: hsl(292, 16%, 49%);
+    font-variation-settings: "wght" 400;
+    font-size: 0.9rem;
+    padding-top: 1rem;
+    line-height: 1.5;
+}
+
+.minus-sign {
+    background-color: hsl(292, 42%, 14%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 50%;
+    height: 1.875rem;
+    width: 1.875rem;
+    border: none;
+    cursor: grab;
+}
+
+.image-mobile {
+    position: absolute;
+    height: 20rem;
+    top: 0px;
+    left: 0px;
+}
+
+.break {
+    flex-basis: 100%;
+}
+
+hr {
+    width: 90%;
+    border: none;
+    background-color: aliceblue;
+    height: 1px;
+    margin-right: 3.125rem;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+@media (min-width: 376px) {
+    .accordion {
+        width: 30rem;
+    }
+
+    #faq {
+        padding-bottom: 2.50rem;
+    }
+
+    .faq-text {
+        font-size: 2.85rem;
+    }
+
+    .accordian-item {
+        justify-content: space-between;
+    }
+
+    .accordian-item-text {
+        width: 25rem;
+    }
+
+    .show-more-symbol {
+        margin-right: 1rem;
+    }
+
+
+
+
+}
